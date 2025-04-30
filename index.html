@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Chronograph Watch - Timepiece Haven</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">Timepiece<span>Haven</span></div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="cart-icon">
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          <span class="cart-count">0</span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Product Display -->
+    <section class="product-display">
+      <div class="product-images">
+        <img id="mainImage" src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Premium Chronograph Watch" class="main-image"/>
+        <div class="thumbnail-container">
+          <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Watch front view" class="thumbnail active" onclick="changeImage(this)"/>
+          <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Watch side view" class="thumbnail" onclick="changeImage(this)"/>
+          <img src="https://images.unsplash.com/photo-1539874754764-5a96559165b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Watch on wrist" class="thumbnail" onclick="changeImage(this)"/>
+        </div>
+      </div>
+      <div class="product-details">
+        <h1 class="product-title">Heritage Chronograph Automatic Watch</h1>
+        <p class="product-brand">By Swiss Precision</p>
+
+        <div class="price-container">
+          <span class="current-price">$1,249.99</span>
+          <span class="original-price">$1,599.99</span>
+          <span class="discount">22% OFF</span>
+        </div>
+
+        <div class="product-features">
+          <h3>Key Features:</h3>
+          <ul>
+            <li><i class="fas fa-check"></i> Swiss-made automatic movement</li>
+            <li><i class="fas fa-check"></i> 42mm stainless steel case</li>
+            <li><i class="fas fa-check"></i> Sapphire crystal with anti-reflective coating</li>
+            <li><i class="fas fa-check"></i> Genuine Italian leather strap</li>
+            <li><i class="fas fa-check"></i> Water resistant to 100m (10ATM)</li>
+            <li><i class="fas fa-check"></i> Chronograph with 30-minute and 12-hour counters</li>
+            <li><i class="fas fa-check"></i> 48-hour power reserve</li>
+          </ul>
+        </div>
+
+        <div class="action-buttons">
+          <button class="add-to-cart" onclick="addToCart()">
+            <i class="fas fa-shopping-cart"></i> Add to Cart
+          </button>
+          <button class="wishlist" onclick="addToWishlist()">
+            <i class="far fa-heart"></i> Add to Wishlist
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+      <h2 class="section-title">Customer Reviews</h2>
+
+      <div class="rating-overview">
+        <div class="average-rating">4.8</div>
+        <div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="rating-count">Based on 347 reviews</div>
+        </div>
+      </div>
+
+      <div class="review">
+        <div class="review-header">
+          <span class="review-author">James Wilson</span>
+          <span class="review-date">August 12, 2023</span>
+        </div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="review-content">
+          This watch exceeded all my expectations. The craftsmanship is impeccable, and the automatic movement keeps incredibly accurate time. The blue sunburst dial is stunning in sunlight. Worth every penny!
+        </p>
+      </div>
+
+      <div class="review">
+        <div class="review-header">
+          <span class="review-author">Emily Chen</span>
+          <span class="review-date">July 28, 2023</span>
+        </div>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p class="review-content">
+          Beautiful timepiece with excellent weight and balance. The leather strap is high quality but took a few days to break in. The chronograph functions work smoothly. Only wish it came with a metal bracelet option.
+        </p>
+      </div>
+
+      <button class="view-all-reviews">View All Reviews</button>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+      <h2 class="section-title">You May Also Like</h2>
+
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Diver's Watch" class="product-card-img"/>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Professional Diver 300M</h3>
+            <div class="product-card-price">$1,499.99</div>
+            <button class="product-card-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1548169874-53e85f753f1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Pilot's Watch" class="product-card-img"/>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Aviator GMT Automatic</h3>
+            <div class="product-card-price">$1,399.99</div>
+            <button class="product-card-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Minimalist Watch" class="product-card-img"/>
+          <div class="product-card-body">
+            <h3 class="product-card-title">Classic Minimalist</h3>
+            <div class="product-card-price">$899.99</div>
+            <button class="product-card-button">Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div id="quickViewModal" class="modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <!-- Modal content would be loaded here -->
+    </div>
+  </div>
+
+  <script>
+    function changeImage(element) {
+      const mainImage = document.getElementById('mainImage');
+      mainImage.src = element.src;
+      
+      // Update active thumbnail
+      document.querySelectorAll('.thumbnail').forEach(thumb => {
+        thumb.classList.remove('active');
+      });
+      element.classList.add('active');
+    }
+    
+    function addToCart() {
+      const cartCount = document.querySelector('.cart-count');
+      let count = parseInt(cartCount.textContent);
+      cartCount.textContent = count + 1;
+      alert('Added to cart!');
+    }
+    
+    function addToWishlist() {
+      alert('Added to wishlist!');
+    }
+    
+    function closeModal() {
+      document.getElementById('quickViewModal').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
